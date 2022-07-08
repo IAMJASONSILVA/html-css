@@ -12,16 +12,37 @@
 
         table {
             border-collapse: collapse;
+            width: 700px;
+            height: 250px;
         }
 
-        
-        th, td {
-            border: 1px solid darkgray;
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        td,th{
+            border: 1px solid black;
             padding: 10px;
+            text-align: center;
         }
 
-        thead.capiton > tr > td {
-            background-color: brown;
+        th#cinza0{
+            background-color: gray;
+            color: white;
+        }
+
+        td#cinza{
+            color: white;
+            background-color: gray;
+            font-weight: bold;
+        }
+
+        th#cinza {
+            color: white;
+            text-align: left;
+            background-color: gray;
+            font-weight: bold;
         }
         
     </style>
@@ -30,17 +51,17 @@
     <h1>Desafio 14</h1>
     <table>
         <thead>
-            
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2">Média</th>
+
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2">Média</th>
-            </tr>
-             <tr>
-                <th>0.0</th>
-                <th>0.0</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
            </tr>
+        </thead>
+        <tbody>
             <tr>
                 <th rowspan="3" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
@@ -60,29 +81,26 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="rowgroup">Mécia de Exatas</th>
-                <th>0.0</th>
+                <th colspan="4" id="cinza" scope="rowgroup">Mécia de Exatas</th>
+                <th id="cinza0">0.0</th>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
-                <td>0.0</td>
+                <td>Biologia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-                <td>0.0</td>
+                <td>Geografia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="rowgroup" class="linha">Média de Humanas</th>
-                <th>0.0</th>
+                <th colspan="4" id="cinza" scope="rowgroup" class="linha">Média de Humanas</th>
+                <th id="cinza0">0.0</th>
             </tr>
-
-        </thead>
-        <tbody>
-            
+           
         </tbody>
     </table>
 </body>
